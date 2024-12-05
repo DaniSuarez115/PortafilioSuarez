@@ -6,13 +6,14 @@
 {% load static %}
 
 
-<header>
+<header class="text-center py-4">
     <h1>Daniel Suárez Arias</h1>
     <p>Desarrollador Web Full Stack</p>
-    <a href="#contact">Contáctame</a>
-    <a href="{% url 'portfolio' %}" >Mis Proyectos</a>
-    <a href="{% static 'core/pdf/cv.pdf' %}" target="_blank">Ver CV</a>
-
+    <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+        <a href="#contact" class="btn btn-secondary custom-hover">Contáctame</a>
+        <a href="{% url 'portfolio' %}" class="btn btn-secondary custom-hover">Mis Proyectos</a>
+        <a href="{% static 'core/pdf/cv.pdf' %}" target="_blank" class="btn btn-secondary custom-hover">Ver CV</a>
+    </div>
 </header>
 
 <section>

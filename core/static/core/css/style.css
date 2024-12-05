@@ -127,6 +127,22 @@ section{
     }
 }
 
+@media (max-width: 500px) {
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+}
+
+
+
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -191,12 +207,12 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
-  margin-left:200px;
 }
 footer a {
   color: #fff;
   text-decoration: none;
   margin: 0 1rem;
+  margin-left:200px;
 }
 header a:hover {
   background: #0056b3; /* Azul más oscuro */
@@ -431,4 +447,29 @@ body.dark-mode .mode-icon {
 .carousel-inner img {
   max-height: 400px;
   object-fit: cover;
+}
+
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #000; /* Conserva el estilo original */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .btn {
+      font-size: 0.9rem; /* Ajusta el tamaño del texto */
+      width: 100%; /* Botones ocupan todo el ancho */
+  }
+}
+
+
+.custom-hover:hover {
+  background-color: #aed0d6  !important; /* Verde oscuro */
+  border-color: #aed0d6  !important;
+  color: rgb(56, 1, 255) !important;
 }
